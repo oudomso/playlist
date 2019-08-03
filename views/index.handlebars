@@ -1,0 +1,43 @@
+<body id="body-home">
+  <div id="home">
+    <div class="container">
+      <div class="row">
+        <div class="col-8 offset-2">
+          <h1 class="center-text">{{msg}}</h1>
+          <h3 class="sub-title">Make Your Dream Playlist Below </h2>
+
+            <div id="borderblock">
+
+              <form class="clearfix mb-4" action="POST">
+                <div class="form-group">
+                  <label for="example-text" id="form-fields">Enter Playlist Name</label>
+                  <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+                    placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                  <label for="example-description" id="form-fields">Enter Playlist Description</label>
+                  <textarea class="form-control" id="example-description" aria-describedby="example-description"
+                    placeholder="Enter Description"></textarea>
+                </div>
+                <button id="submit" class="btn btn-primary float-right">Submit</button>
+              </form>
+            </div>
+
+            <h3 id="text1">Playlists</h3>
+            <ul id="example-list" class="list-group">
+              {{#each examples}}
+              <li data-id="{{this.id}}" class="list-group-item">
+                <a href="example/{{this.id}}">{{this.playlist_name}}</a>
+                <button class="btn btn-danger float-right delete">ｘ</button>
+
+              </li>
+              {{/each}}
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>

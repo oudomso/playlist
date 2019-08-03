@@ -1,0 +1,55 @@
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/jplayer.blue.monday.css" />
+  <link rel="stylesheet" href="./styles/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<div style="background-image: url(../img/music.jpg); background-size:cover; height: 100%; padding: 10%">
+
+
+              <div class="card-body" style="background-image: url(../img/innermusic.jpg); background-size:cover; min-height: 1200 px">
+
+              <h1 class="card-title playlist-title">{{example.playlist_name}}</h5>
+              <p >
+                <strong>ID</strong>: {{example.id}}</p>
+              <p>
+                <p>
+                  <strong>Playlist Name: </strong>: {{example.playlist_name}}</p>
+                <p>
+                  <strong>Genre:</strong> {{example.type_of_playlist}}</p>
+                <p>
+                  <strong>Songs </strong> </p>
+                  <div class="song-holder">
+                    
+                  </div>
+                  {{!-- {{#each songs}}
+                  <li data-id="{{this.id}}" class="list-group-item">
+                    <a >{{this.song_title}}</a>
+                  </li>
+                  {{/each}} --}}
+                <a href="/">← Back To Home</a>
+            </div>
+
+
+        <div class="card-body contain" style="background-color: white; background-size:cover; min-height: 50%">
+            <h2 style="text-align:center"> Add A Song Here</h2>
+              <form>
+                <label> Enter Song Name: </label>
+                  <input style="text-align:center" type="text" placeholder="Song Name" id="song-name">
+                  <br>
+                  <label> Enter Artist Name: </label>
+                  <input  style="text-align:center" type="text" placeholder="Artist" id="artist">
+                  <br>
+                  <label> Enter Genre: </label>
+                  <input  style="text-align:center" type="text" placeholder="Genre" id="genre">
+                  <br>
+                  <button  style="text-align:center" type="button" id="add-song" class="btn btn-success">Add Song</button>
+              </form>
+        </div>
+            
+              
+
+            
+  
+      
+</div>
